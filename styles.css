@@ -1,0 +1,80 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+main > h1 {
+    font-weight: 300;
+    font-size: 42pt;
+    margin-top: 50pt;
+}
+
+.left-balance {
+    width: 50%;
+    text-align: end;
+}
+
+.right-balance {
+    width: 50%;
+    text-align: start;
+    position: relative;
+    left: 50%;
+}
+
+main > ul {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14pt;
+    list-style-type: circle;
+}
+
+footer {
+    opacity: 0.4;
+}
+
+footer > hr {
+    width: 6pt;
+    margin-top: 60pt;
+}
+
+footer > .heart {
+    padding-top: 10pt;
+}
+
+/* ------------------------- */
+/* Colors: Light / Dark mode */
+/* ------------------------- */
+
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+    .heart-dark-mode {
+        display: none;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+    .heart-light-mode {
+        display: none;
+    }
+}
+
+/* 
+body {
+    background-color: white;
+    color: black;
+}
+.heart-dark-mode {
+    display: none;
+} */
