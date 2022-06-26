@@ -9,12 +9,15 @@
 /* Light mode */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: white;
+        background-color: rgb(230, 230, 230);
         color: black;
     }
-    .heart-dark-mode {
-        display: none;
-    }
+    a:link      { color: #005ae2; }
+    a:visited   { color: #005ae2; }
+    a:hover     { color: #005ae2; }
+    a:active    { color: #005ae2; }
+    .heart-light-mode { display: inherit; }
+    .heart-dark-mode  { display: none; }
 }
 
 /* Dark mode */
@@ -23,9 +26,12 @@
         background-color: #0d1117;
         color: white;
     }
-    .heart-light-mode {
-        display: none;
-    }
+    a:link      { color: #5b9af8; }
+    a:visited   { color: #5b9af8; }
+    a:hover     { color: #5b9af8; }
+    a:active    { color: #5b9af8; }
+    .heart-light-mode { display: none; }
+    .heart-dark-mode  { display: inherit; }
 }
 
 /* ------------------------- */
